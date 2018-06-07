@@ -12,21 +12,42 @@ header>img{
   width: 15%;
 }
 
+form{
+  background-color: white;
+  width: 70%;
+  height: 600px;
+  top: 40%;
+  position: absolute;
+  margin-left: 20%;
+}
+
+
 .sideNav{
 position: relative;
 height: 55%;
 width: 15%;
-background-color: #f3f3f3;
+background-color: #ff1293;
+color: white;
+padding-left: 1%;
+padding-top: 5px;
+transition: 0.2s;
+}
+
+.sideNav>p:hover{
+  padding-left: 1%;
+  transition: 0.2s;
 }
 
 .bannerCube{
+  color: white;
   position: absolute;
-  background-color: #f3f3f3;
+  background-color: #ff1293;
   width: 20%;
   height: 20%;
   margin-left: 20%;
   margin-top: -8%;
   box-shadow: 2px 2px 5px black;
+  padding: 1%;
 }
 
 .bannerCube>h4{
