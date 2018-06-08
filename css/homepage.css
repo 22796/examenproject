@@ -21,6 +21,62 @@ form{
   margin-left: 20%;
 }
 
+.formContents{
+  width: 80%;
+  margin: auto;
+  margin-top: 2%;
+}
+
+.arrow{
+  width: 100%;
+  height: 100%;
+}
+
+#nextButton1{
+  background-color: #ff1293;
+  width: 60px;
+  height: 45px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  transition: 0.1s;
+}
+
+#nextButton1:hover{
+  padding-left: 2%;
+  transition: 0.3s;
+}
+
+#nextButton2{
+  background-color: #ff1293;
+  width: 60px;
+  height: 45px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  transition: 0.1s;
+}
+
+#nextButton2:hover{
+  padding-left: 2%;
+  transition: 0.3s;
+}
+
+#nextButton3{
+  background-color: #ff1293;
+  width: 60px;
+  height: 45px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  transition: 0.1s;
+}
+
+#nextButton3:hover{
+  padding-left: 2%;
+  transition: 0.3s;
+}
+
 
 .sideNav{
 position: relative;
