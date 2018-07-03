@@ -1,77 +1,301 @@
 <!DOCTYPE html>
-  <html>
-    <head>
-      <!--Import Google Icon Font-->
-      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-      <!--Import materialize.css-->
-      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
-      <link type="text/css "rel="stylesheet" href="css/homepage.css">
+<html>
 
-      <!--Let browser know website is optimized for mobile-->
-      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    </head>
+<head>
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Import materialize.css-->
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+  <link type="text/css " rel="stylesheet" href="css/homepage.css">
 
-    <body>
-      <div class="wrapper">
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
 
-<header>
-  <img src="css/images/logo.svg" alt="Mediacollege logo">
-  <div class="bannerCube">
-    <h4>Inlichtingsformulier</h4>
-    <p>schooljaar 2018-2019<br>
-    In te vullen door Decaan / Mentor<br>
-    GRAAG VOLLEDIG INVULLEN
-</p>
-  </div>
+<body>
+  <div class="wrapper">
 
-</header>
+    <header>
+      <img src="css/images/logo.svg" alt="Mediacollege logo">
+      <div class="bannerCube">
+        <h4>Inlichtingsformulier</h4>
+        <p>schooljaar 2018-2019<br> In te vullen door Decaan / Mentor<br> GRAAG VOLLEDIG INVULLEN
+        </p>
+      </div>
+    </header>
+
     <main class="mainContent">
-      <p>test</p>
+      <form action="index.html" method="post">
+      <br>
 
       <div class="sideNav">
         <h5>Voortgang:</h5>
-        <p id="page1">Page 1</p>
-        <p id="page2">Page 2</p>
-        <p id="page3">Page 3</p>
+        <p id="page1">Leerling gegevens</p>
+        <p id="page2">Opleiding</p>
+        <p id="page3">Indruk</p>
+        <p id="page4">Bijzonderheden</p>
+        <p id="page5">Uw gegevens</p>
       </div>
 
-      <form id="form1">
+      <div id="form1">
+        <div class="formHeader">
+          <p>Leerling gegevens</p>
+        </div>
         <div class="formContents">
-<h1>Information 1</h1>
 
+          <div class="input-field col s6">
+            <p>Naam leerling</p>
+            <input id="first_name" type="text" class="validate">
+            <label for="first_name"></label>
+            <p>Geboortedatum</p>
+            <input type="text" class="datepicker">
+          </div>
+
+        </div>
+        <div id="nextButton1">
+          <img src="css/images/arrow.png" class="arrow">
+        </div>
       </div>
+      <!-- form 1 ends here -->
 
-      <div id="nextButton1">
-<img src="css/images/arrow.png" class="arrow">
-      </div>
-
-      </form>
-
-      <form id="form2">
+      <div id="form2">
+        <div class="formHeader">
+          <p>Opleiding</p>
+        </div>
         <div class="formContents">
-<h1>Information 2</h1>
-      </div>
+          <div class="input-field col s6">
+  <p class="purpleText">Welke opleiding volgt de leerling?</p>
+<select id="leerwegOptions">
+  <option>anders</option>
+  <option value="0">option 0</option>
+  <option value="1">option 1</option>
+  <option value="1">option 1</option>
+  <option value="2">option 2</option>
+</select>
+</div>
+<div class="form2Option">
+<p>peop1</p>
+</div>
+<div class="form2Option">
+<p>peop2</p>
+</div>
+<div class="form2Option">
+<p>peop3</p>
+</div>
 
-      <div id="nextButton2">
-<img src="css/images/arrow.png" class="arrow">
-      </div>
-      </form>
+        </div>
 
-      <form id="form3">
+        <div id="nextButton2">
+          <img src="css/images/arrow.png" class="arrow">
+        </div>
+      </div>
+      <!-- form 2 ends here -->
+
+      <div id="form3">
+        <div class="formHeader">
+          <p>Indruk</p>
+        </div>
         <div class="formContents">
-<h1>Information 3</h1>
+          <p>Hoe is uw indruk op school over de leerling?</p>
+
+          <div class="form3selectionContainers">
+            <p class="purpleText">Werkhouding</p>
+            <div class="form3Selectors">
+              <label>Concentratie	</label>
+              <select>
+    <option value="1">Goed</option>
+    <option value="2">Voldoende</option>
+    <option value="3">Zwak</option>
+    <option value="4">Onvoldoende</option>
+  </select>
+            </div>
+            <div class="form3Selectors">
+              <label>Werktempo	</label>
+              <select>
+<option value="1">Goed</option>
+<option value="2">Voldoende</option>
+<option value="3">Zwak</option>
+<option value="4">Onvoldoende</option>
+</select>
+            </div>
+            <div class="form3Selectors">
+              <label>Zelfstandig werken in klas	</label>
+              <select>
+<option value="1">Goed</option>
+<option value="2">Voldoende</option>
+<option value="3">Zwak</option>
+<option value="4">Onvoldoende</option>
+</select>
+            </div>
+          </div>
+
+          <div class="form3selectionContainers">
+            <p class="purpleText">Instelling</p>
+            <div class="form3Selectors">
+              <label>Motivatie	</label>
+              <select>
+    <option value="1">Goed</option>
+    <option value="2">Voldoende</option>
+    <option value="3">Zwak</option>
+    <option value="4">Onvoldoende</option>
+  </select>
+            </div>
+            <div class="form3Selectors">
+              <label>Doorzettingsvermogen		</label>
+              <select>
+<option value="1">Goed</option>
+<option value="2">Voldoende</option>
+<option value="3">Zwak</option>
+<option value="4">Onvoldoende</option>
+</select>
+            </div>
+          </div>
+
+          <div class="form3selectionContainers">
+            <p class="purpleText">Vaardigheden</p>
+            <div class="form3Selectors">
+              <label>Communicatieve	</label>
+              <select>
+    <option value="1">Goed</option>
+    <option value="2">Voldoende</option>
+    <option value="3">Zwak</option>
+    <option value="4">Onvoldoende</option>
+  </select>
+            </div>
+            <div class="form3Selectors">
+              <label>vaardigheden	</label>
+              <select>
+<option value="1">Goed</option>
+<option value="2">Voldoende</option>
+<option value="3">Zwak</option>
+<option value="4">Onvoldoende</option>
+</select>
+            </div>
+            <div class="form3Selectors">
+              <label>Sociale vaardigheden</label>
+              <select>
+<option value="1">Goed</option>
+<option value="2">Voldoende</option>
+<option value="3">Zwak</option>
+<option value="4">Onvoldoende</option>
+</select>
+            </div>
+          </div>
+
+          <div id="nextButton3">
+            <img src="css/images/arrow.png" class="arrow">
+          </div>
+            </div>
       </div>
+      <!-- form 3 ends here -->
 
-      <div id="nextButton3">
-<img src="css/images/arrow.png" class="arrow">
-      </div>
-      </form>
+      <div id="form4">
+        <div class="formHeader">
+          <p>Bijzonderheden</p>
+        </div>
+        <div class="formContents">
+          <p>Heeft de leerling een aandoening en/of beperking die van invloed op de studie is of kan zijn?</p>
+          <p>(bij plaatsing inleveren verklaringen verplicht)</p> <br>
 
-    </main>
+          <div id="form4SelectorsLeft">
+            <p class="purpleText">Volgt de leerling speciaal onderwijs?</p>
+            <select>
+              <option value="1">Ja</option>
+              <option value="2">Nee</option>
+            </select>
 
-    </div> <!--end wrapper -->
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js "></script>
-      <script type="text/javascript" src="js/materialize.min.js"></script>
-        <script type="text/javascript" src="js/form.js"></script>
-    </body>
-  </html>
+            <p class="purpleText">Heeft de leerling dyslexie?</p>
+            <select>
+              <option value="1">Ja</option>
+              <option value="2">Nee</option>
+            </select>
+
+            <p class="purpleText">Heeft de leerling dyscalculie?</p>
+            <select>
+              <option value="1">Ja</option>
+              <option value="2">Nee</option>
+            </select>
+
+            <p class="purpleText">Is de leerling recent besproken in het extern zorg- en adviesteam (ZAT)</p>
+            <select>
+              <option value="1">Ja</option>
+              <option value="2">Nee</option>
+            </select>
+
+            <p class="purpleText">Ontvangt de leerling nog andere zorg?</p>
+            <select>
+              <option value="1">Ja</option>
+              <option value="2">Nee</option>
+            </select>
+          </div>
+
+          <div id="form4SelectorsRight">
+            <div id="form4SelectorsRight">
+              <p class="purpleText">Zoja, welke zorg?</p>
+         <input placeholder="Placeholder" id="first_name" type="text" class="validate">
+
+         <p class="purpleText">Zijn er andere bijzondere persoonlijk omstandigheden waarvan de school op de hoogte moet zijn?</p>
+    <input placeholder="Placeholder" id="first_name" type="text" class="validate">
+       </div>
+          </div>
+
+        </div>
+
+        <div id="nextButton4">
+          <img src="css/images/arrow.png" class="arrow">
+        </div>
+
+        </div>
+        <!-- form 4 ends here -->
+
+        <div id="form5">
+          <div class="formHeader">
+              <p>Uw gegevens</p>
+          </div>
+          <div class="formContents">
+
+            <div class="input-field col s6">
+              <div id="form5Left">
+                <p>Naam</p>
+                <input id="first_name" type="text" class="validate">
+                <p>Functie</p>
+                <input id="function" type="text" class="validate">
+                <p>Email</p>
+                <input id="email" type="email" class="validate">
+                <p>School</p>
+                <input id="school" type="text" class="validate">
+                <p>plaats</p>
+                <input id="place" type="text" class="validate">
+
+              </div>
+                <div id="form5Right">
+                    <div class="input-field col s6">
+            <p class="purpleText">Geslacht</p>
+          <select>
+            <option value="1">Man</option>
+            <option value="2">Vrouw</option>
+          </select>
+
+          <p class="purpleText">Telefonisch contact gewenst</p>
+        <select>
+          <option value="1">Ja</option>
+          <option value="2">Nee</option>
+        </select>
+        </div>
+                  </div>
+          </div>
+          <div id="nextButton5">
+            <img src="css/images/arrow.png" class="arrow">
+          </div>
+        </div>
+        <!-- Actual form ends here -->
+  </form>
+  </main>
+  </div>
+    <!--end wrapper -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js "></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/form.js"></script>
+</body>
+
+</html>
