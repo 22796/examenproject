@@ -2,6 +2,7 @@
 <html>
 
 <head>
+  <title>MA leerjaar 2018-2019 inlichtingsformulier</title>
   <!--Import Google Icon Font-->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <!--Import materialize.css-->
@@ -10,13 +11,20 @@
 
   <!--Let browser know website is optimized for mobile-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!--Throw some meta tags here for google.-->
+  <meta name="keywords" content="mediacollege, inlichtingsformulier, gegevens ,formulier">
+  <meta name="language" content="nederland">
+  <meta http-equiv="language" content="NL">
 </head>
 
 <body>
   <div class="wrapper">
 
+    <!-- Dropdown Trigger -->
     <header>
       <img src="css/images/logo.svg" alt="Mediacollege logo">
+      <p class="purpleText" id="bannerCubeMobile">Inlichtingsformulier | In te vullen door Decaan / Mentor | GRAAG VOLLEDIG INVULLEN</p>
       <div class="bannerCube">
         <h4>Inlichtingsformulier</h4>
         <p>schooljaar 2018-2019<br> In te vullen door Decaan / Mentor<br> GRAAG VOLLEDIG INVULLEN
@@ -28,13 +36,26 @@
       <form action="index.html" method="post">
       <br>
 
+<div class="dropdown">
+  <a class='dropdown-trigger btn' data-target='dropdown1'>Drop Me!</a>
+
+  <!-- Dropdown Structure -->
+  <ul id='dropdown1' class='dropdown-content'>
+    <li class="page1">Leerling gegevens</li>
+    <li class="page2">Opleiding</li>
+    <li class="page3">Indruk</li>
+    <li class="page4">Bijzonderheden</li>
+    <li class="page5">Uw gegevens</li>
+  </ul>
+</div>
+
       <div class="sideNav">
         <h5>Voortgang:</h5>
-        <p id="page1">Leerling gegevens</p>
-        <p id="page2">Opleiding</p>
-        <p id="page3">Indruk</p>
-        <p id="page4">Bijzonderheden</p>
-        <p id="page5">Uw gegevens</p>
+        <p class="page1">Leerling gegevens</p>
+        <p class="page2">Opleiding</p>
+        <p class="page3">Indruk</p>
+        <p class="page4">Bijzonderheden</p>
+        <p class="page5">Uw gegevens</p>
       </div>
 
       <div id="form1">
@@ -67,20 +88,66 @@
   <p class="purpleText">Welke opleiding volgt de leerling?</p>
 <select id="leerwegOptions">
   <option>anders</option>
-  <option value="0">option 0</option>
-  <option value="1">option 1</option>
-  <option value="1">option 1</option>
-  <option value="2">option 2</option>
+  <option value="0">VMBO</option>
+  <option value="1">HAVO</option>
+  <option value="1">VWO</option>
+  <option value="2">MBO</option>
 </select>
 </div>
 <div class="form2Option">
-<p>peop1</p>
+  <div class="input-field col s12">
+    <p class="purpleText">Niveau</p>
+    <select>
+      <option value="1">BB</option>
+      <option value="2">KB</option>
+      <option value="3">GL</option>
+      <option value="4">TL</option>
+      <option value="5">LWT</option>
+      <option value="6">LWOO</option>
+    </select>
+    <p class="purpleText">Sector</p>
+    <select>
+      <option value="1">Economie</option>
+      <option value="2">Landbouw</option>
+      <option value="3">Techniek</option>
+      <option value="4">Zorg & Welzijn</option>
+    </select>
+        <p class="purpleText">Heeft de leerling een keuzevak MVI gedaan?</p>
+    <select>
+      <option value="1">Nee</option>
+      <option value="2">Ja</option>
+    </select>
+    <div class="input-field col s6">
+      <p class="purpleText">Zo ja, welke? </p>
+      <input id="first_name" type="text" class="validate">
+      <p class="purpleText">Diploma behaald / te behalen op:</p>
+      <input id="first_name" type="text" class="validate">
+        </div>
+      </div>
 </div>
 <div class="form2Option">
-<p>peop2</p>
+  <div class="input-field col s6">
+    <p class="purpleText">Diploma behaald / te behalen op:</p>
+    <input id="first_name" type="text" class="validate">
+    <p class="purpleText">Overgangsbewijs van leerjaar:</p>
+    <input id="first_name" type="text" class="validate">
+    <p class="purpleText">naar leerjaar:</p>
+    <input id="first_name" type="text" class="validate">
+      </div>
 </div>
 <div class="form2Option">
-<p>peop3</p>
+  <p class="purpleText">Opleidingsniveau:</p>
+<select>
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+</select>
+<p class="purpleText">Leerweg:</p>
+<select>
+  <option value="1">BOL</option>
+  <option value="2">BBL</option>
+</select>
 </div>
 
         </div>
@@ -282,13 +349,15 @@
           <option value="2">Nee</option>
         </select>
         </div>
-                  </div>
-          </div>
-          <div id="nextButton5">
-            <img src="css/images/arrow.png" class="arrow">
-          </div>
         </div>
-        <!-- Actual form ends here -->
+          </div>
+            <div id="check">
+<p class="purpleText">Is alles echt ingevuld?</p>
+<p id="checkText">Ja, verstuur.</p>
+            </div>
+            <button id="submitButton" type="button">Verstuur</button>
+        </div>
+
   </form>
   </main>
   </div>
