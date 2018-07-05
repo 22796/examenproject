@@ -19,10 +19,28 @@ $(document).ready(function(){
 
 //mouse pointer
 $('.sideNav>p').css('cursor', 'pointer');
+$('#checkText').css('cursor', 'pointer');
+
+//Laat een confirmation zien bij het submitten
+$("#submitButton").click(function()
+{
+   $("#submitButton").slideUp();
+   $("#check").slideDown();
+});
+
+//Checked and submit
+
+$("#checkText").click(function()
+{
+  window.location.replace("submitted.html");
+});
+
+//dropdown for mobile
+  $('.dropdown-trigger').dropdown();
 
 //Hide every page of the form except the first one on load.
 $("form").ready(function(){
-$("#page1").css("color", "black");
+$(".page1").css("color", "black");
 $("#form2").hide();
 $("#form3").hide();
 $("#form4").hide();
@@ -39,11 +57,11 @@ $goToPage2 = function(){
   $("#form3").hide();
   $("#form4").hide();
   $("#form5").hide();
-  $("#page1").css("color", "black");
-  $("#page2").css("color", "white");
-  $("#page3").css("color", "white");
-  $("#page4").css("color", "white");
-  $("#page5").css("color", "white");
+  $(".page1").css("color", "black");
+  $(".page2").css("color", "white");
+  $(".page3").css("color", "white");
+  $(".page4").css("color", "white");
+  $(".page5").css("color", "white");
   $("#nextButton1").show();
   $("#nextButton2").hide();
   $("#nextButton3").hide();
@@ -57,11 +75,11 @@ $goToPage1 = function(){
   $("#form3").hide();
   $("#form4").hide();
   $("#form5").hide();
-  $("#page1").css("color", "white");
-  $("#page2").css("color", "black");
-  $("#page3").css("color", "white");
-  $("#page4").css("color", "white");
-  $("#page5").css("color", "white");
+  $(".page1").css("color", "white");
+  $(".page2").css("color", "black");
+  $(".page3").css("color", "white");
+  $(".page4").css("color", "white");
+  $(".page5").css("color", "white");
   $("#nextButton1").hide();
   $("#nextButton2").show();
   $("#nextButton3").hide();
@@ -75,11 +93,11 @@ $goToPage3 = function(){
   $("#form3").show();
   $("#form4").hide();
   $("#form5").hide();
-  $("#page1").css("color", "white");
-  $("#page2").css("color", "white");
-  $("#page3").css("color", "black");
-  $("#page4").css("color", "white");
-  $("#page5").css("color", "white");
+  $(".page1").css("color", "white");
+  $(".page2").css("color", "white");
+  $(".page3").css("color", "black");
+  $(".page4").css("color", "white");
+  $(".page5").css("color", "white");
   $("#nextButton1").hide();
   $("#nextButton2").hide();
   $("#nextButton3").show();
@@ -93,11 +111,11 @@ $goToPage4 = function(){
   $("#form3").hide();
   $("#form4").show();
   $("#form5").hide();
-  $("#page1").css("color", "white");
-  $("#page2").css("color", "white");
-  $("#page3").css("color", "white");
-  $("#page4").css("color", "black");
-  $("#page5").css("color", "white");
+  $(".page1").css("color", "white");
+  $(".page2").css("color", "white");
+  $(".page3").css("color", "white");
+  $(".page4").css("color", "black");
+  $(".page5").css("color", "white");
   $("#nextButton1").hide();
   $("#nextButton2").hide();
   $("#nextButton3").hide();
@@ -111,11 +129,11 @@ $goToPage5 = function(){
   $("#form3").hide();
   $("#form4").hide();
   $("#form5").show();
-  $("#page1").css("color", "white");
-  $("#page2").css("color", "white");
-  $("#page3").css("color", "white");
-  $("#page4").css("color", "white");
-  $("#page5").css("color", "black");
+  $(".page1").css("color", "white");
+  $(".page2").css("color", "white");
+  $(".page3").css("color", "white");
+  $(".page4").css("color", "white");
+  $(".page5").css("color", "black");
   $("#nextButton1").hide();
   $("#nextButton2").hide();
   $("#nextButton3").hide();
@@ -141,27 +159,27 @@ $("#nextButton4").click(function(){
 });
 
 //Activating form1 with the navigation.
-$("#page1").click(function(){
+$(".page1").click(function(){
   $goToPage2();
 });
 
 //Activating form2
-$("#page2").click(function(){
+$(".page2").click(function(){
   $goToPage1();
 });
 
 //Activating form3 with the navigation.
-$("#page3").click(function(){
+$(".page3").click(function(){
   $goToPage3();
 });
 
 //Activating form4 with the navigation.
-$("#page4").click(function(){
+$(".page4").click(function(){
   $goToPage4();
 });
 
 //Activating form5 with the navigation.
-$("#page5").click(function(){
+$(".page5").click(function(){
   $goToPage5();
 });
 
